@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #0f2a3d;
+    --panel: #16384f;
+    --ink: #eaf4fa;
+    --muted: #9bbad0;
+    --accent: #ffc94d;
+    --error: #ff8a80;
+    --radius: 14px;
+}
+
+
+body {
+    font-family: "Poppins";
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+.section-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.section-container h1 {
+    color: var(--ink);
+    font-size: 25.6px;
+}
+
+input {
+    width: 320px;
+    height: 48px;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 14px;
+    color: var(--ink); 
+    background-color: var(--panel);
+    border: none;
+    margin-right: 10px;
+}
+
+input::placeholder {
+    color: var(--ink)
+}
+
+input:focus {
+    outline: 2px solid var(--accent);
+}
+
+.search-btn {
+    height: 48px;
+    width: 91px;
+    border-radius: 10px;
+    background-color: var(--accent);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+.hint {
+    color: var(--ink);
+    font-size: 14px;
+}
+
+/* CONTENT CONTAINER */
+.content-container {
+    color: white;
+    margin-top: 40px;
+    background-color: var(--panel);
+    padding: 1.5rem;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-container .city {
+    font-size: 30px;
+}
+
+.content-container .region {
+    color: var(--muted);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content-container .temprature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px
+}
+
+.emoji-and-description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.emoji {
+    font-size: 64px;
+}
+
+.temprature .temprature-number {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.temprature h3 {
+    color: var(--muted);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.additional-info {
+    display: flex;
+    gap: 70px;
+}
+
+.additional-info h4 {
+    font-size: 13.5px;
+    font-weight: 300;
+    color: var(--muted);
+}
+
+.hide {
+    display: none;
+}
