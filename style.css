@@ -155,3 +155,83 @@ input:focus {
         transform: rotate(360deg);
     }
 }
+
+/* MAKING IT RESPONSIVE */
+@media (max-width: 600px) {
+   .section-container {
+    align-items: center;
+   }
+
+   .search-btn {
+    display: none;
+   }
+
+   input {
+    width: 250px;
+   }
+
+   /* content container */
+   .content-container .city {
+    font-size: 15px;
+}
+
+.content-container .region {
+    color: var(--muted);
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.content-container .temprature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px
+}
+
+.emoji-and-description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.emoji {
+    font-size: 33px;
+}
+
+.temprature .temprature-number {
+    font-size: 33px;
+    font-weight: bold;
+}
+
+.temprature h3 {
+    color: var(--muted);
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.additional-info {
+    display: flex;
+    gap: 35px;
+}
+
+.additional-info h4 {
+    font-size: 7px;
+    font-weight: 300;
+    color: var(--muted);
+}
+
+.hide {
+    display: none;
+    opacity: 0;
+}
+
+.loading {
+    color: var(--ink);
+    position: absolute;
+    align-self: center;
+    top: 95%;
+    font-size: 15px;
+    animation: spin 1s linear infinite;
+}
+
+}
